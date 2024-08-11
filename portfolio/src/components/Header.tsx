@@ -1,18 +1,17 @@
 /** @jsxImportSource @emotion/react */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { css, keyframes } from "@emotion/react";
 import NavBar from "./header/NavBar";
 
 const HeaderContainer = css`
   margin: 0;
   padding: 0;
-  whidth: 100vw;
+  width: 100vw;
   height: 100vh;
   background-color: #dcdcdc;
 `;
 const MainContent = css`
   margin: 1rem 4rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,10 +47,9 @@ const TitleMove = keyframes`
   `;
 
 const TitleAnimationMove = css`
-  position: absolute;
-  color: red;
-  top: 10%;
+  color: black;
   font-size: 3rem;
+  margin: 0;
   animation: ${TitleMove} 2s;
 `;
 
@@ -66,23 +64,24 @@ const ContentMove = keyframes`
   }
   `;
 const ContentAnimationMove = css`
-  position: absolute;
-  color: purple;
-  top: 20%;
+  color: black;
   font-size: 1rem;
+  margin: 0;
   animation: ${ContentMove} 2s;
 `;
 
 function Header() {
   return (
-    <div css={HeaderContainer}>
-      <NavBar />
-      <div css={MainContent}>
-        <img css={ImgSize} src="/profile.jpg" alt="profile" />
-        <h1 css={TitleAnimationMove}>Frontend Developer</h1>
-        <p css={ContentAnimationMove}>
-          프론트엔드 개발자 <strong>이현우</strong> 입니다.
-        </p>
+    <div>
+      <div css={HeaderContainer}>
+        <NavBar />
+        <div css={MainContent}>
+          <img css={ImgSize} src="/profile.jpg" alt="profile" />
+          <h1 css={TitleAnimationMove}>Frontend Developer</h1>
+          <p css={ContentAnimationMove}>
+            프론트엔드 개발자 <strong>이현우</strong> 입니다.
+          </p>
+        </div>
       </div>
     </div>
   );
