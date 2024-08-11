@@ -9,6 +9,7 @@ const HeaderContainer = css`
   width: 100vw;
   height: 100vh;
   background-color: #dcdcdc;
+  position: fixed;
 `;
 const MainContent = css`
   margin: 1rem 4rem;
