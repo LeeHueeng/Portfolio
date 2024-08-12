@@ -6,9 +6,11 @@ import MyProject from "./MyProject";
 
 const ProjectContainer = css`
   width: 80%;
-  background-color: #dcdcdc;
+
   display: flex;
-  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   flex-flow: row wrap;
 `;
 export default function Project() {
