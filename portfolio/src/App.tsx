@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { css } from "@emotion/react";
 import Header from "./components/Header";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 const AppContainer = css`
   margin: 0;
@@ -45,6 +46,7 @@ function App() {
       <Header />
       <div css={HiddenBox(boxTop)}>
         <About />
+        <Contact />
       </div>
     </div>
   );

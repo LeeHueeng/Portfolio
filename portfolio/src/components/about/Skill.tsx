@@ -14,7 +14,8 @@ import Notion from "../../Develope skill icon/Notion.svg";
 import Discord from "../../Develope skill icon/Discord.svg";
 export default function Skill() {
   const MainContainer = css`
-    width: 100vw;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;

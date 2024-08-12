@@ -6,6 +6,7 @@ import Skill from "./about/Skill";
 
 const MainContent = css`
   width: 100vw;
+  height: 270vh;
   display: flex;
   flex-direction: column;
   align-items: center;
