@@ -2,16 +2,25 @@
 
 import React from "react";
 import { css } from "@emotion/react";
+import MyProject from "./MyProject";
 
 const ProjectContainer = css`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 80%;
   background-color: #dcdcdc;
+  display: flex;
+  gap: 5rem;
+  flex-flow: row wrap;
 `;
 export default function Project() {
-  return <div css={ProjectContainer}>Project</div>;
+  return (
+    <div css={ProjectContainer}>
+      <MyProject />
+      <MyProject />
+      <MyProject />
+      <MyProject />
+      <MyProject />
+      <MyProject />
+      <MyProject />
+    </div>
+  );
 }

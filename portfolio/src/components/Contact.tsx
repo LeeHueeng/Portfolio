@@ -5,8 +5,6 @@ import Project from "./Contact/Project";
 
 const ContactContainer = css`
   width: 100vw;
-
-  height: 100vh;
   display: flex;
 `;
 
@@ -16,7 +14,6 @@ const TitleContactContainer = css`
   width: 10vw;
   display: flex;
   flex-direction: column;
-  position: relative;
 `;
 const SecondContactContainer = css`
   width: 85vw;
