@@ -17,7 +17,7 @@ const HiddenBox = (top: number) => css`
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 200vh;
+  height: 500vh;
   position: relative;
   top: ${top}%;
   transition: top;

@@ -6,14 +6,12 @@ import Skill from "./about/Skill";
 
 const MainContent = css`
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 const AboutContainer = css`
   width: 90vw;
-  height: 100vh;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -49,7 +47,7 @@ const ContentBox = css`
 
 const SectionTitle = css`
   width: 80vw;
-  padding-top: 3rem;
+  margin-top: 5rem;
   font-size: 3rem;
   color: white;
 `;

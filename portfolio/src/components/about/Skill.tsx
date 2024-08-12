@@ -22,7 +22,7 @@ export default function Skill() {
   const SkillTitle = css`
     font-size: 3rem;
     color: white;
-    margin-top: 10rem;
+    margin-top: 3rem;
   `;
   const SkillContainer = css`
     height: 100%;
